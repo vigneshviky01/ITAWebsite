@@ -166,7 +166,7 @@ const EventsDetails = () => {
             className="flex-grow"
           >
             <motion.img
-              src="/src/Screenshot 2025-03-10 at 12.05.44 PM.png"
+              src="/Screenshot 2025-03-10 at 12.05.44 PM.png"
               alt="welcome page"
               className="rounded-4xl max-sm:hidden"
             />
