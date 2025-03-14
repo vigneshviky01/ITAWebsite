@@ -217,7 +217,7 @@ const Header = () => {
                     whileInView={{ opacity: 2, y: 0 }}
                     transition={{ duration: 3, ease: "easeOut" }}
                 >
-                    <div className="bg-gray-500 bg-opacity-80 text-white p-4 sm:p-6 rounded-tl-[30px] sm:rounded-tl-[50px] max-w-[280px] sm:max-w-[350px] md:max-w-[400px] shadow-lg">
+                    <div className="max-sm:hidden bg-gray-500 bg-opacity-80 text-white p-4 sm:p-6 rounded-tl-[30px] sm:rounded-tl-[50px] max-w-[280px] sm:max-w-[350px] md:max-w-[400px] shadow-lg">
                         <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl">10+ Tech <br /> Events</h2>
                         <p className="pt-2 text-xs sm:text-sm">
                             Here's a structured section with 10+ tech events and

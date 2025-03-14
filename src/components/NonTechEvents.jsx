@@ -31,7 +31,7 @@ const NonTechEvents = () => {
             <SnowAnimation />
             
             <motion.div
-                className="flex flex-col max-sm:left-0 md:p-10 bg-gradient-to-r from-gray-900 to-gray-800 text-white min-h-screen flex-grow"
+                className="px-8 md:px-12 flex flex-col max-sm:left-0 md:p-10 bg-gradient-to-r from-gray-900 to-gray-800 text-white min-h-screen flex-grow"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}

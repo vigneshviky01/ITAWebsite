@@ -103,7 +103,7 @@ const Events = () => {
                 {/* Right Arrow Button - MODIFIED CLICK HANDLER */}
                 <motion.button
                     className="absolute right-3 bottom-5 w-10 h-10 bg-black text-white rounded-full flex items-center justify-center shadow-md hover:bg-gray-800 transition"
-                    onClick={() => navigate(`/events/${index}`)}
+                    onClick={() => navigate(`/event/${index}`)}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                 >
