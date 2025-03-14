@@ -1,4 +1,3 @@
-
 import { useParams } from "react-router-dom";
 import eventsData from "../data/eventsdata.json";
 
@@ -11,9 +10,6 @@ const EventsDetails = () => {
     const { id } = useParams();
     const event = eventsData.find(event => event.id === Number(id)); // Convert id to number
 
-   
-
-
     if (!event) {
         return <h2 className="text-center text-xl">Event Not Found</h2>;
     }
@@ -24,7 +20,7 @@ const EventsDetails = () => {
             <SnowAnimation />
 
             <motion.div
-                className="flex flex-col p-10 bg-gradient-to-r from-gray-900 to-gray-800 text-white min-h-screen"
+                className="flex flex-col p-10 bg-gradient-to-r from-gray-900 to-gray-800 text-white min-h-screen flex-grow"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
@@ -35,7 +31,6 @@ const EventsDetails = () => {
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    whileHover={{ scale: 1.05 }}
                 >
                     {event.title}
                 </motion.h1>
@@ -43,15 +38,14 @@ const EventsDetails = () => {
                 {/* Rest of your component remains the same */}
                 {/* Image & Description Section */}
                 <motion.div
-                    className="flex flex-col md:flex-row justify-between items-center gap-8 mt-6"
+                    className="flex flex-col md:flex-row justify-between items-center gap-8 mt-6 flex-grow"
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.3 }}
                 >
                     {/* Event Image */}
                     <motion.div
-                        className="md:w-1/2 lg:w-2/5"
-                        whileHover={{ scale: 1.05 }}
+                        className="md:w-1/2 lg:w-2/5 flex-grow"
                         transition={{ duration: 0.3 }}
                     >
                         <motion.img
@@ -66,8 +60,7 @@ const EventsDetails = () => {
 
                     {/* Event Description */}
                     <motion.div
-                        className="md:w-1/2 lg:w-3/5 flex flex-col justify-center"
-                        whileHover={{ scale: 1.02 }}
+                        className="md:w-1/2 lg:w-3/5 flex flex-col justify-center flex-grow"
                         transition={{ duration: 0.3 }}
                     >
                         <motion.h1
@@ -87,14 +80,13 @@ const EventsDetails = () => {
 
                 {/* Topics Section */}
                 <motion.div
-                    className="sm:flex gap-11"
+                    className="sm:flex gap-11 flex-grow"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
                 >
                     <motion.div
-                        className="mt-10 p-6 bg-gray-700 rounded-lg shadow-lg w-full md:w-3/4 lg:w-2/3 h-auto max-h-[300px] overflow-y-auto"
-                        whileHover={{ scale: 1.05, backgroundColor: "#555" }}
+                        className="mt-10 p-6 bg-gray-700 rounded-lg shadow-lg w-full md:w-3/4  h-auto max-h-[300px] overflow-y-auto flex-grow"
                         transition={{ duration: 0.3 }}
                     >
                         <motion.h2
@@ -104,7 +96,7 @@ const EventsDetails = () => {
                             💡 Welcomed Topics
                         </motion.h2>
 
-                        <ul className="list-disc pl-6 space-y-2 text-gray-300">
+                        <ul className="md:text-center list-disc md:list-none pl-6 md:pl-0 space-y-2 text-gray-300">
                             {["Artificial Intelligence & Machine Learning", "Cybersecurity & Ethical Hacking", "Blockchain Technology", "Cloud Computing & Edge Computing", "Internet of Things (IoT)"].map((topic, index) => (
                                 <motion.li
                                     key={index}
@@ -118,14 +110,12 @@ const EventsDetails = () => {
                             ))}
                         </ul>
                     </motion.div>
-
-
                 </motion.div>
 
                 {/* Rest of your component remains unchanged */}
                 {/* Guidelines Section */}
                 <motion.div
-                    className="md:flex md:mt-15 gap-4"
+                    className="md:flex md:mt-15 gap-4 flex-grow"
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.9 }}
@@ -135,13 +125,11 @@ const EventsDetails = () => {
                         src={event.image2}
                         alt="guideline"
                         className="md:w-lg max-sm:hidden md:h-96 w-48 h-56 rounded-2xl"
-                        whileHover={{ scale: 1.05 }}
                     />
 
                     {event.guidelines && (
                         <motion.div
-                            className="mt-0 p-4 max-sm:mt-6 rounded-lg shadow-md"
-                            whileHover={{ scale: 1.05 }}
+                            className="mt-0 p-4 max-sm:mt-6 rounded-lg shadow-md flex-grow"
                         >
                             <motion.h3
                                 className="md:text-6xl text-xl font-bold"
@@ -166,22 +154,22 @@ const EventsDetails = () => {
                     )}
                 </motion.div>
 
-                <div className="md:flex md:mt-10">
+                <div className="md:flex md:mt-10 flex-grow">
                     {/* Additional Image */}
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1.2, delay: 1 }}
+                        className="flex-grow"
                     >
                         <motion.img
-                            src="/public/Screenshot 2025-03-10 at 12.05.44 PM.png"
+                            src="/Screenshot 2025-03-10 at 12.05.44 PM.png"
                             alt="welcome page"
                             className="rounded-4xl max-sm:hidden"
-                            whileHover={{ scale: 1.05 }}
                         />
                     </motion.div>
 
-                    <div className="max-sm:mt-5 md:mt-10 md:ml-10">
+                    <div className="max-sm:mt-5 md:mt-10 md:ml-10 flex-grow">
                         <EventForm />
                     </div>
                 </div>
@@ -199,13 +187,12 @@ const EventsDetails = () => {
                         </motion.button></a>
                 </motion.div>
 
-                <div className="md:flex">
+                <div className="md:flex flex-grow">
                     <motion.h1
                         className="md:text-3xl sm:text-xl max-sm:p-9 md:mt-10 font-bold mt-4"
                         initial={{ y: -50, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        whileHover={{ scale: 1.05 }}
                     >
                         For more details, join our community through the WhatsApp link !!!
                     </motion.h1>

@@ -3,25 +3,24 @@
         "id": 0,
         "title": "Brushstroke Battle",
         "title1": "About the Event",
-        "description": "Brushstroke Battle is an artistic showdown where creativity meets competition! Participants will be given a surprise theme on the spot and must bring it to life on canvas using their own painting materials. With a limited time to complete their masterpiece, artists must showcase originality, technique, and storytelling through their brushstrokes. This event is not just about skill but about expressing emotions and ideas in the most captivating way. Let your creativity flow, let colors speak, and may the best brush win! ",
-        "image": "/public/Events/WhatsApp Image 2025-03-12 at 4.10.52 PM (2).jpeg",
-        "image2": "/public/Events/WhatsApp Image 2025-03-12 at 10.40.20 AM.jpeg",
+        "description": "Unleash your creativity in this ultimate art face-off! Express your imagination through colors and strokes, creating masterpieces that captivate and inspire. The most artistic vision wins! ",
+        "image": "/Events/WhatsApp Image 2025-03-12 at 4.10.52 PM (2).jpeg",
+        "image2": "/Events/WhatsApp Image 2025-03-12 at 10.40.20 AM.jpeg",
         "link": "https://chat.whatsapp.com/FwAMAE0mbaxFoHDjWYphdO",
         "guidelines": {
             "1": "Paint an original artwork based on a given theme (revealed on the spot!).",
             "2": "Bring your own painting materials (e.g., canvas, paints, brushes).",
-            "3": "Plagiarism will not be tolerated. Ensure that your artwork does not resemble any existing work.",
-            "4": "Submit your artwork within the given time frame (e.g., 60 minutes).",
-            "5": "Follow these rules to avoid disqualification."
+            "3": "Submit your artwork within the given time frame (e.g., 60 minutes).",
+            "4": "Follow these rules to avoid disqualification."
         }
     },
     {
         "id": 1,
         "title": "The Souls Symphony",
         "title1": "About the Event",
-        "description": "The Souls Symphony is a poetic journey where words become melodies of emotion and creativity. Participants will craft original poems based on a theme revealed on the spot, weaving their thoughts into verses that resonate with depth and meaning. With a focus on originality and expression, this event celebrates the beauty of poetry while challenging poets to bring their ideas to life within a limited time. Whether you write in rhyme or free verse, let your soul compose its own symphony and leave an everlasting impression with your words! ",
-        "image": "/public/Events/WhatsApp Image 2025-03-12 at 3.05.19 PM.jpeg",
-        "image2": "/public/Events/WhatsApp Image 2025-03-12 at 10.37.48 AM.jpeg",
+        "description": " A poetic battleground where words weave magic. Craft verses that touch hearts, stir emotions, and leave a lasting impact. Let your poetry speak for your soul and claim the spotlight! ",
+        "image": "/Events/WhatsApp Image 2025-03-12 at 3.05.19 PM.jpeg",
+        "image2": "/Events/WhatsApp Image 2025-03-12 at 10.37.48 AM.jpeg",
         "link": "https://chat.whatsapp.com/CMq8oej0H5xLVShbAmJ0dB",
         "guidelines": {
             "1": "Write an original poem based on a given theme (revealed on the spot!).",
@@ -35,15 +34,15 @@
         "id": 2,
         "title": "Cinemaster",
         "title1": "About the Event",
-        "description": "Cine Master is the ultimate movie-based quiz competition designed for cinephiles and trivia enthusiasts! Participants will face multiple-choice questions and interactive rounds that test their knowledge of films, actors, directors, and iconic moments from the world of cinema. Exciting rounds like Connections, Song/BGM Recognition, and Lyrics Identification will challenge contestants to think fast and recall their favorite movie moments. With strict time limits and no electronic devices allowed, only the sharpest minds will prevail. Get ready to showcase your film expertise and claim the title of Cine Master!",
-        "image": "/public/Events/WhatsApp Image 2025-03-12 at 3.06.34 PM.jpeg",
-        "image2": "/public/Events/WhatsApp Image 2025-03-12 at 10.41.56 AM.jpeg",
+        "description": "A cinephile’s dream quiz! Test your knowledge of movies, iconic scenes, and cinematic legends. From classics to blockbusters, only the ultimate movie buff will take the crown!",
+        "image": "/Events/Screenshot 2025-03-14 at 1.37.11 PM.png",
+        "image2": "/Events/WhatsApp Image 2025-03-12 at 10.41.56 AM.jpeg",
         "link": "https://chat.whatsapp.com/Lrcm2mrkkOn7iqAq2PaOGA",
         "guidelines": {
             "1": "Participate in a movie-based quiz with Multiple Choice Questions and other interactive rounds.",
-            "2": "Rounds may include:",
-            "3": "Identify the link between movies, actors, directors, etc.",
-            "4": "All answers must be submitted orally to the quizmaster.",
+            "2": "Song/BGM Recognition: Identify songs or background music from various movies.",
+            "3": "Connections: Identify the link between movies, actors, directors, etc.",
+            "4": "Lyrics Identification: Complete or identify song lyrics from movies.",
             "5": "No electronic devices (e.g., phones, tablets) allowed during the quiz."
         }
     },
@@ -51,32 +50,32 @@
         "id": 3,
         "title": "Battle of Wits Arena ",
         "title1": "About the Event",
-        "description": "Battle of Wits is an intense and thought-provoking debate competition where participants engage in dynamic discussions on a topic revealed on the spot. Teams of 2 members will present their arguments, challenge opposing viewpoints, and defend their stance within a structured time frame. The event emphasizes logical reasoning, persuasive communication, and respectful discourse. Bonus points are awarded for well-articulated counterarguments and engaging discussions. Battle of Wits is the perfect platform for those who love intellectual challenges and enjoy debating with confidence and clarity!",
-        "image": "/public/Events/WhatsApp Image 2025-03-12 at 3.06.08 PM.jpeg",
-        "image2": "/public/Events/WhatsApp Image 2025-03-12 at 10.38.55 AM.jpeg",
+        "description": "A debate where intellect meets persuasion. Argue your case, counter opponents with logic, and dominate the stage with your eloquence. The sharpest debaters will rise as champions!",
+        "image": "/Events/WhatsApp Image 2025-03-12 at 3.06.08 PM.jpeg",
+        "image2": "/Events/WhatsApp Image 2025-03-12 at 10.38.55 AM.jpeg",
         "link": "https://chat.whatsapp.com/LpYbcaeyB7AEekiXKDvOIU",
         "guidelines": {
             "1": "Participate in a debate on a given topic (revealed on the spot).",
             "2": "Each speaker will have a limited time frame (e.g., 2-3 minutes) to present their views.",
             "3": "Rebuttals and counterarguments are allowed within the given time frame.",
-            "4": "Teams will consist of 2-3 members.",
-            "5": "Maintain respectful decorum and refrain from personal attacks or insults on opposing team members' views.",
-            "6": "Engage in constructive and interesting discussions to earn extra points for your team!"
+            
+            "4": "Maintain respectful decorum and refrain from personal attacks or insults on opposing team members' views.",
+            "5": "Engage in constructive and interesting discussions to earn extra points for your team!"
         }
     },
     {
         "id": 4,
         "title": "Meme zone",
         "title1": "About the Event",
-        "description": " Meme Zone is a fun and engaging event where participants showcase their creativity and humor by designing original memes based on a theme revealed on the spot. This challenge tests quick thinking, wit, and the ability to craft relatable, entertaining content within a limited timeframe. Participants must ensure their memes are original, respectful, and free from offensive or inappropriate material. With judging based on creativity, humor, and relevance to the theme, Meme Zone promises to be an exciting and laughter-filled competition for all meme enthusiasts!",
-        "image": "/public/Events/WhatsApp Image 2025-03-12 at 4.10.52 PM.jpeg",
-        "image2": "/public/Events/WhatsApp Image 2025-03-12 at 10.38.45 AM.jpeg",
+        "description": "The funniest battlefield where creativity meets humor! Craft hilarious, relatable, and trending memes that break the internet. The wittiest meme makers will rule the meme kingdom!",
+        "image": "/Events/WhatsApp Image 2025-03-12 at 4.10.52 PM.jpeg",
+        "image2": "/Events/WhatsApp Image 2025-03-12 at 10.38.45 AM.jpeg",
         "link": "https://chat.whatsapp.com/C4wIT0z0LAw5TfK1lwztMI",
         "guidelines": {
             "1": "Create and present original memes on a given theme (revealed on the spot).",
             "2": "Each participant will have 20 minutes to create and present their memes.",
             "3": "Judging will be based on creativity, humor, and relevance to the theme.",
-            "4": "No insulting or mocking other participants, judges, or staff",
+            "4": "No insulting or mocking other participants, judges, or staff.",
             "5": "Bring your own laptop.",
             "6": "Follow these rules to avoid disqualification."
         }

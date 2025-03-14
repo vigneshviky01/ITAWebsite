@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react"; // Added missing import
@@ -32,7 +31,7 @@ const NonTechEvents = () => {
             <SnowAnimation />
             
             <motion.div
-                className="flex flex-col p-10 bg-gradient-to-r from-gray-900 to-gray-800 text-white min-h-screen"
+                className="flex flex-col max-sm:left-0 md:p-10 bg-gradient-to-r from-gray-900 to-gray-800 text-white min-h-screen flex-grow"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
@@ -43,22 +42,20 @@ const NonTechEvents = () => {
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    whileHover={{ scale: 1.05 }}
                 >
                     {events.title}
                 </motion.h1>
 
                 {/* Image & Description Section */}
                 <motion.div
-                    className="flex flex-col md:flex-row justify-between items-center gap-8 mt-6"
+                    className="flex flex-col md:flex-row justify-between items-center gap-8 mt-6 flex-grow"
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.3 }}
                 >
                     {/* Event Image */}
                     <motion.div
-                        className="md:w-1/2 lg:w-2/5"
-                        whileHover={{ scale: 1.05 }}
+                        className="md:w-1/2 lg:w-2/5 flex-grow"
                         transition={{ duration: 0.3 }}
                     >
                         <motion.img
@@ -73,8 +70,7 @@ const NonTechEvents = () => {
 
                     {/* Event Description */}
                     <motion.div
-                        className="md:w-1/2 lg:w-3/5 flex flex-col justify-center"
-                        whileHover={{ scale: 1.02 }}
+                        className="md:w-1/2 lg:w-3/5 flex flex-col justify-center flex-grow"
                         transition={{ duration: 0.3 }}
                     >
                         <motion.h1
@@ -92,12 +88,9 @@ const NonTechEvents = () => {
                     </motion.div>
                 </motion.div>
 
-               
-               
-
                 {/* Guidelines Section */}
                 <motion.div
-                    className="md:flex md:mt-15 gap-4"
+                    className="md:flex md:mt-15 gap-4 flex-grow"
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.9 }}
@@ -106,13 +99,11 @@ const NonTechEvents = () => {
                         src={events.image2}
                         alt="guideline"
                         className="md:w-lg max-sm:hidden md:h-96 w-48 h-56 rounded-2xl"
-                        whileHover={{ scale: 1.05 }}
                     />
 
                     {events.guidelines && (
                         <motion.div
-                            className="mt-0 p-4 max-sm:mt-6 rounded-lg shadow-md"
-                            whileHover={{ scale: 1.05 }}
+                            className="mt-0 p-4 max-sm:mt-6 rounded-lg shadow-md flex-grow"
                         >
                             <motion.h3
                                 className="md:text-6xl text-xl font-bold"
@@ -137,22 +128,22 @@ const NonTechEvents = () => {
                     )}
                 </motion.div>
 
-                <div className="md:flex md:mt-10">
+                <div className="md:flex md:mt-10 flex-grow">
                     {/* Additional Image */}
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1.2, delay: 1 }}
+                        className="flex-grow"
                     >
                         <motion.img
                             src="/public/Screenshot 2025-03-10 at 12.05.44 PM.png"
                             alt="welcome page"
                             className="rounded-4xl max-sm:hidden"
-                            whileHover={{ scale: 1.05 }}
                         />
                     </motion.div>
 
-                    <div className="max-sm:mt-5 md:mt-10 md:ml-10">
+                    <div className="max-sm:mt-5 md:mt-10 md:ml-10 flex-grow">
                         <NonTechForm />
                     </div>
                 </div>
@@ -170,13 +161,12 @@ const NonTechEvents = () => {
                         </motion.button></a>
                 </motion.div>
 
-                <div className="md:flex">
+                <div className="md:flex flex-grow">
                     <motion.h1
                         className="md:text-3xl sm:text-xl max-sm:p-9 md:mt-10 font-bold mt-4"
                         initial={{ y: -50, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        whileHover={{ scale: 1.05 }}
                     >
                         For more details, join our community through the WhatsApp link !!!
                     </motion.h1>

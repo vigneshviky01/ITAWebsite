@@ -37,22 +37,12 @@ const Overview = () => {
                     muted
                     playsInline
                 >
-                    <source src="/public/VN20230726_210707(1).mp4" type="video/mp4" />
+                    <source src="/video.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </motion.div>
 
-            <motion.div className="flex justify-center mt-20 md:mb-8 mb-3.5"  id="register">
-            <a href="https://forms.gle/gHqB4LVGFxU51wmG6" target="_blank" rel="noopener noreferrer">
-                    <motion.button 
-                        className="md:py-4 md:px-8 py-2 px-4 rounded-3xl bg-black text-white border border-black md:text-4xl hover:bg-red-600 hover:text-white"
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        transition={{ duration: 0.3 }}
-                    >
-                        Register Now
-                    </motion.button></a>
-                </motion.div>
+           
 
 
         </div>
