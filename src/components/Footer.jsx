@@ -155,7 +155,7 @@ const Footer = () => {
 
             {/* Top Section */}
             <div className="relative max-w-4xl mx-auto z-10">
-                <div className="absolute max-sm:top-15 top-0 left-1/2 max-sm:left-2 transform -translate-x-1/2 -translate-y-1/2 p-2 rounded-full">
+                <div className="absolute max-sm:top-15 top-0 left-1/2 max-sm:left-1 transform -translate-x-1/2 -translate-y-1/2 p-2 rounded-full">
                     <img
                         src="/public/1000019635-removebg-preview.png"
                         alt="React Logo"
@@ -163,7 +163,7 @@ const Footer = () => {
                     />
                 </div>
                 <motion.h2
-                    className="text-3xl md:text-6xl pt-12 font-bold mt-12"
+                    className="text-2xl md:text-6xl pt-12 font-bold mt-12"
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.5 }}
@@ -208,10 +208,10 @@ const Footer = () => {
                         className="p-3 rounded-full bg-white text-black hover:bg-gray-200"
                         initial={{ y: 20, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
-                        transition={{
-                            duration: 0.5,
-                            delay: 0.1 * index + 0.3
-                        }}
+                        // transition={{
+                        //     duration: 0.5,
+                        //     delay: 0.1 * index + 0.3
+                        // }}
                         viewport={{ once: true }}
                     >
                         <platform.icon size={40} />
