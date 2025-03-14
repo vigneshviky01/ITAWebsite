@@ -1,6 +1,7 @@
-
 import { motion } from 'framer-motion';
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
+
+const LazyVideo = lazy(() => import('./LazyVideo'));
 
 const Overview = () => {
     return (
@@ -23,28 +24,26 @@ const Overview = () => {
                 our events cater to all. Don’t miss out—register now and be part of the experience!
             </p>
 
-            {/* Video Section with Scroll Zoom Effect */}
+            {/* Video Section with Lazy Loading and Scroll Zoom Effect */}
             <motion.div
                 className="mt-8 flex justify-center"
                 initial={{ scale: 0.8, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
             >
-                <video
-                    className="w-full max-w-4xl rounded-lg shadow-lg "
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
+                <Suspense
+                    fallback={
+                        <motion.div
+                            className="w-full max-w-4xl h-64 bg-gray-300 animate-pulse rounded-lg shadow-lg"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.5 }}
+                        />
+                    }
                 >
-                    <source src="/video.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+                    <LazyVideo />
+                </Suspense>
             </motion.div>
-
-           
-
-
         </div>
     );
 };
