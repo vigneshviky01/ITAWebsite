@@ -3,6 +3,7 @@ import eventsData from "../data/eventsdata.json";
 import { motion } from "framer-motion";
 import EventForm from "./EventForm";
 import Footer from "./Footer";
+import { useEffect } from "react";
 import SnowAnimation from "./SnowAnimation"; // Import the new component
 
 const EventsDetails = () => {
@@ -11,6 +12,16 @@ const EventsDetails = () => {
   if (!event) {
     return <h2 className="text-center text-xl">Event Not Found</h2>;
   }
+  useEffect(() => {
+          window.scrollTo(0, 0);
+          
+          // Optional: Also set a timeout to handle any delays in rendering
+          const timer = setTimeout(() => {
+              window.scrollTo(0, 0);
+          }, 100);
+          
+          return () => clearTimeout(timer);
+      }, []);
 
   return (
     <>
