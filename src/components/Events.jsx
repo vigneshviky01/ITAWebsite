@@ -70,7 +70,7 @@ const Events = () => {
             <div className="relative w-full md:max-w-7xl px-4 py-5 md:py-8 flex items-center">
                 {/* Left Scroll Button */}
                 <motion.button
-                    className="absolute left-2 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white text-black rounded-full flex items-center justify-center shadow-md hover:bg-gray-800 transition z-10"
+                    className="max-sm:hidden absolute left-2 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white text-black rounded-full flex items-center justify-center shadow-md hover:bg-gray-800 transition z-10"
                     onClick={scrollLeft}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
@@ -119,7 +119,7 @@ const Events = () => {
 
                 {/* Right Scroll Button */}
                 <motion.button
-                    className="absolute right-2 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white text-black rounded-full flex items-center justify-center shadow-md hover:bg-gray-800 transition z-10 
+                    className="max-sm:hidden absolute right-2 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white text-black rounded-full flex items-center justify-center shadow-md hover:bg-gray-800 transition z-10 
             max-sm:right-2"
                     onClick={scrollRight}
                     whileHover={{ scale: 1.1 }}
