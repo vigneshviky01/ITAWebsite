@@ -9,9 +9,9 @@ const NonTechForm = () => {
 
     const [event, setEvent] = useState({
         name: "Event Name",
-        startDate: "Wed, Apr 2",
+        startDate: "Thu, Apr 3",
         startTime: "09:00 AM",
-        endDate: "Wed, Apr 2",
+        endDate: "Thu, Apr 3",
         endTime: "05:00 PM",
         timezone: "https://gct.ac.in/",
         location: "Rudra block, GCT",

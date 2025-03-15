@@ -65,11 +65,14 @@ const NonTech = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 3, delay: index * 0.2, ease: "easeInOut" }}
                         >
-                            <img
-                                src={event.image}
-                                alt={event.title}
-                                className="w-full md:h-65 object-cover rounded-lg"
-                            />
+                            <div className="w-65 h-62 overflow-hidden">
+
+                                <img
+                                    src={event.image}
+                                    alt={event.title}
+                                    className="w-full h-full object-cover object-top rounded-lg"
+                                />
+                            </div>
                             <h3 className="text-xl font-bold max-sm:text-lg">{event.title}</h3>
                             <p className="text-gray-500">{event.subheading}</p>
 
@@ -96,9 +99,9 @@ const NonTech = () => {
                     <ChevronRight className="w-5 h-5" />
                 </motion.button>
             </div>
-            <motion.div className="flex justify-center mt-10 md:mb-8 mb-3.5"  id="register">
-            <a href="https://forms.gle/gHqB4LVGFxU51wmG6" target="_blank" rel="noopener noreferrer">
-                    <motion.button 
+            <motion.div className="flex justify-center mt-10 md:mb-8 mb-3.5" id="register">
+                <a href="https://forms.gle/gHqB4LVGFxU51wmG6" target="_blank" rel="noopener noreferrer">
+                    <motion.button
                         className="md:py-4 md:px-8 py-2 px-4 rounded-3xl bg-black text-white border border-black md:text-4xl hover:bg-red-600 hover:text-white"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
@@ -106,7 +109,7 @@ const NonTech = () => {
                     >
                         Register Now
                     </motion.button></a>
-                </motion.div>
+            </motion.div>
         </motion.div>
     );
 };
