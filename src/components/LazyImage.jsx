@@ -9,7 +9,6 @@ const LazyImage = ({ src, alt, className }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2 }}
-            loading="lazy"
         />
     );
 };

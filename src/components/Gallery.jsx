@@ -1,7 +1,8 @@
 import { ChevronRight } from "lucide-react";
-import { useState ,lazy,Suspense} from "react";
+import { useState, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
-const LazyImage = lazy(() => import("./LazyImage"));
+
+const LazyImage = lazy(() => import("./LazyImage")); // ✅ Dynamic import with lazy()
 
 const imageSets = [
   {
@@ -10,10 +11,7 @@ const imageSets = [
     className: "col-span-2 md:h-[400px] max-sm:h-[250px]",
   },
   {
-    images: [
-      " /Ita_Gallery/IMG_0357-min.JPG ",
-      "/Ita_Gallery/IMG_0199-min.JPG",
-    ],
+    images: ["/Ita_Gallery/IMG_0357-min.JPG", "/Ita_Gallery/IMG_0199-min.JPG"],
     className: "h-[400px] max-sm:h-[180px]",
   },
   {
@@ -56,7 +54,6 @@ const Gallery = () => {
         </motion.h1>
       </div>
 
-      {/* Maintained original grid layout */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
         {imageSets.map((item, galleryIndex) => (
           <motion.div
@@ -65,26 +62,19 @@ const Gallery = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 2 }}
-            // Removed whileHover scale effect
           >
-            <Suspense
-              key={galleryIndex}
-              fallback={
-                <div className="w-full h-full bg-gray-300 animate-pulse rounded-lg"></div>
-              }
-            >
-              {item.images.map(
-                (src, imgIndex) =>
-                  imgIndex === indexes[galleryIndex] && (
+            {item.images.map(
+              (src, imgIndex) =>
+                imgIndex === indexes[galleryIndex] && (
+                  <Suspense key={src} fallback={<div className="w-full h-full bg-gray-300 animate-pulse"></div>}>
                     <LazyImage
-                      key={src}
                       src={src}
                       alt={`Gallery Image ${imgIndex + 1}`}
                       className="w-full h-full object-cover transition-opacity duration-500 ease-in-out"
                     />
-                  )
-              )}
-            </Suspense>
+                  </Suspense>
+                )
+            )}
 
             <motion.button
               className="absolute right-4 top-4 bg-white p-2 rounded-full shadow-lg hover:bg-gray-200"
