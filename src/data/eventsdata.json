@@ -27,8 +27,8 @@
             "1": "Your project must be presented using PPT format, with an optional live demonstration or prototype.",
             "2": "Each team will have 6-8 minutes to present their project, followed by a Q&A session.",
             "3": "You can participate alone or in a team of up to 3 members (max limit: 3 members per team).",
-            "4": "The project must be your original work and not copied from existing solutions.",
-            "5": "If possible, a working prototype or demonstration is highly recommended for better evaluation."
+            "4": "The project must be your original work and not copied from existing solutions."
+            
         }
     },
     {
@@ -54,10 +54,11 @@
         "image2":"/Events/WhatsApp Image 2025-03-12 at 10.31.39 AM.jpeg",
         "link": "https://chat.whatsapp.com/D698HFTyxGkLII7FOeCSMV",
         "guidelines": {
-            "1": "The contest will have two rounds – an online test and a final coding round.",
+            "1": "The contest will have two rounds ",
             "2": "Solutions will be judged based on accuracy, efficiency, and execution time.",
             "3": "Use of pre-written templates or AI tools is strictly prohibited.",
-            "4": "Participants must write clean, readable, and well-structured code."
+            "4": "Participants must write clean, readable, and well-structured code.",
+            "5":"Please bring your own laptop"
         }
     },
     {

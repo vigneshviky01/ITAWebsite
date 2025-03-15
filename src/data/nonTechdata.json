@@ -40,10 +40,10 @@
         "link": "https://chat.whatsapp.com/Lrcm2mrkkOn7iqAq2PaOGA",
         "guidelines": {
             "1": "Participate in a movie-based quiz with Multiple Choice Questions and other interactive rounds.",
-            "2": "Song/BGM Recognition: Identify songs or background music from various movies.",
-            "3": "Connections: Identify the link between movies, actors, directors, etc.",
-            "4": "Lyrics Identification: Complete or identify song lyrics from movies.",
-            "5": "No electronic devices (e.g., phones, tablets) allowed during the quiz."
+            "2": "Rounds may include: \n- Song/BGM Recognition: Identify songs or background music from various movies. \n- Connections: Identify the link between movies, actors, directors, etc. \n- Lyrics Identification: Complete or identify song lyrics from movies.",
+            "3": "No electronic devices (e.g., phones, tablets) allowed during the quiz.",
+            "4": "All answers must be submitted orally to the quizmaster.",
+            "5": "Answer questions within the given time frame."
         }
     },
     {
@@ -58,7 +58,6 @@
             "1": "Participate in a debate on a given topic (revealed on the spot).",
             "2": "Each speaker will have a limited time frame (e.g., 2-3 minutes) to present their views.",
             "3": "Rebuttals and counterarguments are allowed within the given time frame.",
-            
             "4": "Maintain respectful decorum and refrain from personal attacks or insults on opposing team members' views.",
             "5": "Engage in constructive and interesting discussions to earn extra points for your team!"
         }

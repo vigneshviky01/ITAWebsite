@@ -195,7 +195,7 @@ const Footer = () => {
             icon: FaInstagram,
             link: "https://www.instagram.com/ita_gct?igsh=aWFncHk0cXdjOTVj",
           },
-          { icon: FaLinkedin, link: "www.linkedin.com/in/sathish-p-a09695295" },
+          { icon: FaLinkedin, link: "https://www.linkedin.com/in/gctita?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
           { icon: FaGlobe, link: "https://gct.ac.in/" },
           {
             icon: FaWhatsapp,

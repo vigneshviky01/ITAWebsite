@@ -68,7 +68,7 @@ const NonTech = () => {
                             <img
                                 src={event.image}
                                 alt={event.title}
-                                className="w-full md:h-65 object-cover rounded-lg"
+                                className="w-full md:h-62 object-cover object-top rounded-lg"
                             />
                             <h3 className="text-xl font-bold max-sm:text-lg">{event.title}</h3>
                             <p className="text-gray-500">{event.subheading}</p>
