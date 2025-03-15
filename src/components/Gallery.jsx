@@ -6,20 +6,23 @@ const LazyImage = lazy(() => import("./LazyImage")); // ✅ Dynamic import with 
 
 const imageSets = [
   {
-    images: ["/Ita_Gallery/IMG_0180-min.JPG", "/Ita_Gallery/IMG_0710-min.JPG"],
+    images: ["https://res.cloudinary.com/doro2emvj/image/upload/v1742024961/IMG_0180-min_dupuql.jpg", "https://res.cloudinary.com/doro2emvj/image/upload/v1742024967/IMG_0710-min_h82ofa.jpg"],
     description: "A plant that thrives indoors with minimal sunlight.",
     className: "col-span-2 md:h-[400px] max-sm:h-[250px]",
   },
   {
-    images: ["/Ita_Gallery/IMG_0357-min.JPG", "/Ita_Gallery/IMG_0199-min.JPG"],
+    images: [
+      "https://res.cloudinary.com/doro2emvj/image/upload/v1742024965/IMG_0357-min_el8v3c.jpg ",
+      "https://res.cloudinary.com/doro2emvj/image/upload/v1742024963/IMG_0199-min_vufget.jpg",
+    ],
     className: "h-[400px] max-sm:h-[180px]",
   },
   {
-    images: ["/Ita_Gallery/IMG_0346-min.JPG", "/Ita_Gallery/IMG_1157-min.JPG"],
+    images: ["https://res.cloudinary.com/doro2emvj/image/upload/v1742024963/IMG_0346-min_fbcikb.jpg", "https://res.cloudinary.com/doro2emvj/image/upload/v1742024963/IMG_1157-min_rotifb.jpg"],
     className: "h-[400px] max-sm:h-[180px]",
   },
   {
-    images: ["/Ita_Gallery/IMG_0372-min.JPG", "/Ita_Gallery/IMG_0518-min.JPG"],
+    images: ["https://res.cloudinary.com/doro2emvj/image/upload/v1742024964/IMG_0372-min_nqgf86.jpg", "https://res.cloudinary.com/doro2emvj/image/upload/v1742024966/IMG_0518-min_hin9il.jpg"],
     className: "col-span-2 h-[400px] max-sm:h-[250px]",
   },
 ];
@@ -54,7 +57,8 @@ const Gallery = () => {
         </motion.h1>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+      {/* Maintained original grid layout */}
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:px-10">
         {imageSets.map((item, galleryIndex) => (
           <motion.div
             key={galleryIndex}

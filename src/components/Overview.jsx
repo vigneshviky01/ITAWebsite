@@ -26,7 +26,7 @@ const Overview = () => {
 
             {/* Video Section with Lazy Loading and Scroll Zoom Effect */}
             <motion.div
-                className="mt-8 flex justify-center pb-8"
+                className="mt-8 flex justify-center mb-16"
                 initial={{ scale: 0.8, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}

@@ -8,27 +8,27 @@ const Header = () => {
     const [lightningActive, setLightningActive] = useState(false);
 
     // Trigger lightning effect at regular intervals (every ~3 seconds)
-    useEffect(() => {
-        const triggerLightning = () => {
-            setLightningActive(true);
+    // useEffect(() => {
+    //     const triggerLightning = () => {
+    //         setLightningActive(true);
 
-            // Lightning flash duration
-            setTimeout(() => {
-                setLightningActive(false);
-            }, 200);
-        };
+    //         // Lightning flash duration
+    //         setTimeout(() => {
+    //             setLightningActive(false);
+    //         }, 200);
+    //     };
 
-        // Set lightning to occur roughly every 3 seconds with small random variation
-        const intervalId = setInterval(() => {
-            triggerLightning();
-        }, 2000 + (Math.random() * 500 - 250)); // 3000ms ± 250ms for natural variation
+    //     // Set lightning to occur roughly every 3 seconds with small random variation
+    //     const intervalId = setInterval(() => {
+    //         triggerLightning();
+    //     }, 2000 + (Math.random() * 500 - 250)); // 3000ms ± 250ms for natural variation
 
-        // Cleanup on unmount
-        return () => {
-            clearInterval(intervalId);
-            setLightningActive(false);
-        };
-    }, []);
+    //     // Cleanup on unmount
+    //     return () => {
+    //         clearInterval(intervalId);
+    //         setLightningActive(false);
+    //     };
+    // }, []);
 
     return (
         <div className="max-sm:mt-0 m-0 p-0 text-white w-full overflow-hidden">
@@ -187,7 +187,7 @@ const Header = () => {
 
                 {/* Content (same as original) */}
                 <motion.h1
-                    className="text-[50px] sm:text-[80px] max-sm:pt-8 md:pt-9 md:text-[120px] lg:text-[150px] font-serif text-center relative z-10 leading-none mt-12 sm:mt-16"
+                    className="text-[50px] sm:text-[80px] max-sm:pt-8 md:pt-40 md:text-[120px] lg:text-[150px] font-lufka font-bold text-center relative z-10 leading-none mt-12 sm:mt-16"
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 2, y: 0 }}
                     transition={{ duration: 3, ease: "easeOut" }}
@@ -212,16 +212,15 @@ const Header = () => {
 
 
                 <motion.div
-                    className="w-full px-4 sm:px-8 md:px-10 mt-18 sm:mt-12 flex flex-col items-center sm:items-start z-10"
+                    className="w-full px-4 sm:px-8 md:px-10 md:mt-30 sm:mt-12 flex flex-col items-center sm:items-start z-10"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 2, y: 0 }}
                     transition={{ duration: 3, ease: "easeOut" }}
                 >
                     <div className="max-sm:hidden bg-gray-500 bg-opacity-80 text-white p-4 sm:p-6 rounded-tl-[30px] sm:rounded-tl-[50px] max-w-[280px] sm:max-w-[350px] md:max-w-[400px] shadow-lg">
-                        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl">10+ Tech <br /> Events</h2>
+                        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl">5+ Tech <br /> Events</h2>
                         <p className="pt-2 text-xs sm:text-sm">
-                            Here's a structured section with 10+ tech events and
-                            a few paragraphs about their significance.
+                        Join us at Technovate and be a part of an exciting journey of innovation and technology!
                         </p>
                     </div>
                 </motion.div>

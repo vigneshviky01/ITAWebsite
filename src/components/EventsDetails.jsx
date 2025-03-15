@@ -5,6 +5,7 @@ import EventForm from "./EventForm";
 import Footer from "./Footer";
 import { useEffect } from "react";
 import SnowAnimation from "./SnowAnimation"; // Import the new component
+import { FaWhatsapp } from "react-icons/fa";
 
 const EventsDetails = () => {
   const { id } = useParams();
@@ -206,7 +207,7 @@ const EventsDetails = () => {
           </a>
         </motion.div>
 
-        <div className="md:flex flex-grow">
+        <div className="md:flex flex-grow justify-center mb-5">
           <motion.h1
             className="md:text-3xl sm:text-xl max-sm:p-9 md:mt-10 font-bold mt-4"
             initial={{ y: -50, opacity: 0 }}
@@ -223,12 +224,13 @@ const EventsDetails = () => {
             rel="noopener noreferrer"
           >
             <motion.button
-              className="md:py-4 md:px-8 py-2 px-4 rounded-3xl border bg-red-600 text-white border-white md:text-4xl hover:bg-green-600 hover:text-white"
+              className="flex md:py-3 md:px-6 py-2 px-4 rounded-3xl border border-white md:text-4xl hover:bg-white hover:text-black"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               transition={{ duration: 0.3 }}
             >
-              JOIN US
+              <FaWhatsapp size={40} className="mr-3"/>
+              Join Us
             </motion.button>
           </a>
         </div>

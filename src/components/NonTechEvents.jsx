@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react"; // Added missing import
 import eventsData from "../data/nonTechdata.json";
-
+import { FaWhatsapp } from "react-icons/fa";
 import Footer from "./Footer";
 import NonTechForm from "./NonTechForm";
 import SnowAnimation from "./SnowAnimation";
@@ -137,7 +137,7 @@ const NonTechEvents = () => {
                         className="flex-grow"
                     >
                         <motion.img
-                            src="/public/Screenshot 2025-03-10 at 12.05.44 PM.png"
+                            src="/Screenshot 2025-03-10 at 12.05.44 PM.png"
                             alt="welcome page"
                             className="rounded-4xl max-sm:hidden"
                         />
@@ -161,7 +161,7 @@ const NonTechEvents = () => {
                         </motion.button></a>
                 </motion.div>
 
-                <div className="md:flex flex-grow">
+                <div className="md:flex md:flex-grow md:justify-center mb-5">
                     <motion.h1
                         className="md:text-3xl sm:text-xl max-sm:p-9 md:mt-10 font-bold mt-4"
                         initial={{ y: -50, opacity: 0 }}
@@ -171,14 +171,15 @@ const NonTechEvents = () => {
                         For more details, join our community through the WhatsApp link !!!
                     </motion.h1>
 
-                    <a href={events.link} target="_blank" className="mt-5 ml-10 max-sm:pt-10 max-sm:ml-32 " rel="noopener noreferrer">
+                    <a href={events.link} target="_blank" className="md:mt-5 md:ml-10 flex justify-center" rel="noopener noreferrer">
                         <motion.button
-                            className="md:py-4 md:px-8 py-2 px-4 rounded-3xl border bg-red-600 text-white border-white md:text-4xl hover:bg-green-600 hover:text-white"
+                            className="flex justify-center md:py-3 md:px-6 py-2 px-4 rounded-3xl border border-white md:text-4xl hover:bg-white hover:text-black"
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                             transition={{ duration: 0.3 }}
                         >
-                            JOIN US
+                            <FaWhatsapp size={40} className="max-sm:hidden md:mr-3"/>
+                            Join Us
                         </motion.button></a>
                 </div>
             </motion.div>

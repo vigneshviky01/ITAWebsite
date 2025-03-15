@@ -102,7 +102,7 @@ const NonTech = () => {
             <motion.div className="flex justify-center mt-10 md:mb-8 mb-3.5" id="register">
                 <a href="https://forms.gle/gHqB4LVGFxU51wmG6" target="_blank" rel="noopener noreferrer">
                     <motion.button
-                        className="md:py-4 md:px-8 py-2 px-4 rounded-3xl bg-black text-white border border-black md:text-4xl hover:bg-red-600 hover:text-white"
+                        className="md:py-4 md:px-8 py-2 px-4 rounded-3xl bg-black text-white border border-black md:text-4xl hover:text-white"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         transition={{ duration: 0.3 }}

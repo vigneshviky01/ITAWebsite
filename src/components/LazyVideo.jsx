@@ -7,7 +7,7 @@ const LazyVideo = () => {
             muted
             playsInline
         >
-            <source src="/VN20230726_210707 (1).mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/doro2emvj/video/upload/v1742024987/VN20230726_210707_1_nllk1f.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
     );
