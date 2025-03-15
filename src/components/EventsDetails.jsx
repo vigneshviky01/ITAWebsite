@@ -90,6 +90,7 @@ const EventsDetails = () => {
         </motion.div>
 
         {/* Topics Section */}
+        {(event.id == 0 || event.id == 1) && (
         <motion.div
           className="sm:flex gap-11 flex-grow"
           initial={{ opacity: 0 }}
@@ -106,7 +107,7 @@ const EventsDetails = () => {
             >
               💡 Welcomed Topics
             </motion.h2>
-
+            
             <ul className="md:text-center list-disc md:list-none pl-6 md:pl-0 space-y-2 text-gray-300">
               {[
                 "Artificial Intelligence & Machine Learning",
@@ -128,6 +129,7 @@ const EventsDetails = () => {
             </ul>
           </motion.div>
         </motion.div>
+        )}
 
         {/* Rest of your component remains unchanged */}
         {/* Guidelines Section */}
@@ -207,7 +209,7 @@ const EventsDetails = () => {
           </a>
         </motion.div>
 
-        <div className="md:flex flex-grow justify-center mb-5">
+        <div className="md:flex md:flex-grow md:justify-center mb-5">
           <motion.h1
             className="md:text-3xl sm:text-xl max-sm:p-9 md:mt-10 font-bold mt-4"
             initial={{ y: -50, opacity: 0 }}
@@ -220,16 +222,16 @@ const EventsDetails = () => {
           <a
             href={event.link}
             target="_blank"
-            className="mt-5 ml-10 max-sm:pt-10 max-sm:ml-32 "
+            className="md:mt-5 md:ml-10 flex justify-center"
             rel="noopener noreferrer"
           >
             <motion.button
-              className="flex md:py-3 md:px-6 py-2 px-4 rounded-3xl border border-white md:text-4xl hover:bg-white hover:text-black"
+              className="flex justify-center md:py-3 md:px-6 py-2 px-4 rounded-3xl border border-white md:text-4xl hover:bg-white hover:text-black"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               transition={{ duration: 0.3 }}
             >
-              <FaWhatsapp size={40} className="mr-3"/>
+              <FaWhatsapp size={40} className="max-sm:hidden md:mr-3"/>
               Join Us
             </motion.button>
           </a>

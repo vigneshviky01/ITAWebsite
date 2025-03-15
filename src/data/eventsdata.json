@@ -42,7 +42,8 @@
         "guidelines": {
             "1": "The competition will be conducted in two rounds.",
             "2": "Participants will be judged based on accuracy, efficiency, and speed of debugging.",
-            "3": "Use of any external resources, mobile phones, or internet is strictly prohibited."
+            "3": "Use of any external resources, mobile phones, or internet is strictly prohibited.",
+            "4": "Please make sure to bring you own laptops."
         }
     },
     {
@@ -58,7 +59,7 @@
             "2": "Solutions will be judged based on accuracy, efficiency, and execution time.",
             "3": "Use of pre-written templates or AI tools is strictly prohibited.",
             "4": "Participants must write clean, readable, and well-structured code.",
-            "5":"Please bring your own laptop"
+            "5": "Please make sure to bring you own laptops."
         }
     },
     {
@@ -76,7 +77,7 @@
             "4": "Participants must submit their project as a zipped folder containing the source files or a GitHub repository link.",
             "5":" The website must be built from scratch (No pre-built templates or AI-generated designs).",
             "6":" The website should have a working navigation and basic interactivity.",
-            "7":"Please bring your own laptop"
+            "7": "Please make sure to bring you own laptops."
         }
     },
     {

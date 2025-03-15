@@ -236,10 +236,10 @@ const Footer = () => {
         {/* <p className="text-gray-300 text-center text-sm md:text-base">
           ©2025, All Rights Reserved.
         </p> */}
-        <p className="text-gray-300 text-center text-sm md:text-base">
+        <p className="text-gray-300 text-center max-sm:text-xs md:text-base">
           For Queries, Contact
         </p>
-        <p className="text-gray-300 text-center text-sm md:text-base">
+        <p className="text-gray-300 text-center max-sm:text-xs md:text-base">
           Dharini - 7708508262, Muthu Lakshmi - 9715789090, Tamil Selvi - 7904931342
         </p>
       </div>
