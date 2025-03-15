@@ -11,7 +11,7 @@ const Overview = () => {
                 className="text-[150px] md:pl-10 max-sm:text-6xl flex justify-start max-sm:p-2"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
+                transition={{ duration: 0.6, ease: "easeInOut" }}
             >
                 Overview
             </motion.h1>
