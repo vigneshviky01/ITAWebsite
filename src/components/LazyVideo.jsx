@@ -4,8 +4,8 @@ import { useState, useRef } from 'react';
 
 const PlayIcon = () => {
     return (
-          <div className="w-full relative [backdrop-filter:blur(15px)] rounded-full bg-gray border-white border-solid border-[2px] box-border h-[135px] overflow-hidden shrink-0 flex flex-row items-center justify-center px-[35px]">
-                <img className="w-[62px] relative h-[62px]" alt="" src="/play_icon.svg" />
+          <div className="w-full relative [backdrop-filter:blur(15px)] rounded-full bg-gray border-white border-solid border-[2px] box-border h-[135px] max-sm:h-[67px] overflow-hidden shrink-0 flex flex-row items-center justify-center px-[35px] max-sm:px-[17px]">
+                <img className="w-[62px] relative h-[62px] max-sm:h-[31px] max-sm:w-[31px]" alt="" src="/play_icon.svg" />
           </div>);
 };
 

@@ -6,23 +6,23 @@ const LazyImage = lazy(() => import("./LazyImage")); // ✅ Dynamic import with 
 
 const imageSets = [
   {
-    images: ["https://res.cloudinary.com/doro2emvj/image/upload/v1742024961/IMG_0180-min_dupuql.jpg", "https://res.cloudinary.com/doro2emvj/image/upload/v1742024967/IMG_0710-min_h82ofa.jpg"],
+    images: ["https://res.cloudinary.com/doro2emvj/image/upload/v1742104914/IMG_0180-min-transformed_4_whmchg.jpg", "https://res.cloudinary.com/doro2emvj/image/upload/v1742104722/IMG_0710-min-transformed_rstzig.jpg"],
     description: "A plant that thrives indoors with minimal sunlight.",
     className: "col-span-2 md:h-[400px] max-sm:h-[250px]",
   },
   {
     images: [
-      "https://res.cloudinary.com/doro2emvj/image/upload/v1742024965/IMG_0357-min_el8v3c.jpg ",
-      "https://res.cloudinary.com/doro2emvj/image/upload/v1742024963/IMG_0199-min_vufget.jpg",
+      "https://res.cloudinary.com/doro2emvj/image/upload/v1742104720/IMG_0357-min-transformed_nvwu49.jpg",
+      "https://res.cloudinary.com/doro2emvj/image/upload/v1742104721/IMG_0199-min-transformed_lpbtp2.jpg",
     ],
     className: "h-[400px] max-sm:h-[180px]",
   },
   {
-    images: ["https://res.cloudinary.com/doro2emvj/image/upload/v1742024963/IMG_0346-min_fbcikb.jpg", "https://res.cloudinary.com/doro2emvj/image/upload/v1742024963/IMG_1157-min_rotifb.jpg"],
+    images: ["https://res.cloudinary.com/doro2emvj/image/upload/v1742104988/IMG_0346-min-transformed_pn9vql.jpg", "https://res.cloudinary.com/doro2emvj/image/upload/v1742104721/IMG_1157-min-transformed_nol4tz.jpg"],
     className: "h-[400px] max-sm:h-[180px]",
   },
   {
-    images: ["https://res.cloudinary.com/doro2emvj/image/upload/v1742024964/IMG_0372-min_nqgf86.jpg", "https://res.cloudinary.com/doro2emvj/image/upload/v1742024966/IMG_0518-min_hin9il.jpg"],
+    images: ["https://res.cloudinary.com/doro2emvj/image/upload/v1742104721/IMG_0372-min-transformed_hoclbh.jpg", "https://res.cloudinary.com/doro2emvj/image/upload/v1742104687/IMG_0518-min-transformed_tkmtic.jpg"],
     className: "col-span-2 h-[400px] max-sm:h-[250px]",
   },
 ];
