@@ -14,7 +14,7 @@ const EventForm = () => {
         endDate: "Thu, Apr 3",
         endTime: "05:00 PM",
         timezone: "https://gct.ac.in/",
-        location: "Rudra block, GCT",
+        location: "Main Auditorium, GCT",
         description: "Technovate'25: Igniting Innovation 🚀"
     });
 
