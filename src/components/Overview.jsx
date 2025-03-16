@@ -17,7 +17,7 @@ const Overview = () => {
             </motion.h1>
 
             {/* Description */}
-            <p className="max-sm:pl-8 pl-25 md:pb-10">
+            <p className="max-sm:px-8 pl-25 md:pb-10">
                 Join us for an exciting lineup of events designed to inspire, educate,
                 and connect! Whether you're looking to expand your knowledge,
                 network with like-minded individuals, or simply enjoy a great experience,
@@ -26,7 +26,7 @@ const Overview = () => {
 
             {/* Video Section with Lazy Loading and Scroll Zoom Effect */}
             <motion.div
-                className="mt-8 flex justify-center mb-16"
+                className="mt-8 flex justify-center mb-16 mx-7"
                 initial={{ scale: 0.8, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -34,7 +34,7 @@ const Overview = () => {
                 <Suspense
                     fallback={
                         <motion.div
-                            className="w-full max-w-4xl h-64 bg-gray-300 animate-pulse rounded-lg shadow-lg"
+                            className="w-full max-w-3xl h-64 bg-gray-300 animate-pulse rounded-lg shadow-lg"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.5 }}

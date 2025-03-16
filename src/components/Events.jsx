@@ -49,7 +49,7 @@ const Events = () => {
             >
                 <h2 className="text-[40px] max-sm:pl-2 sm:text-[80px] md:text-[120px] lg:text-[150px] font-bold leading-tight">Events</h2>
 
-                <p className="md:pt-16 lg:pt-15 pt-2 text-lg md:pl-4 lg:pl-8 max-w-full">
+                <p className="md:pt-16 lg:pt-15 pt-2 text-base md:pl-4 max-sm:px-8 lg:pl-8 max-w-full">
                     Dive into a world of thrilling challenges and contests designed to showcase your skills and creativity. From Paper Presentations to Coding Challenges, Quiz Battles, and more, there's something for everyone. Get ready to push your limits, compete with like-minded innovators, and take home exciting rewards.
                 </p>
             </motion.div>
