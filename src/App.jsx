@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { Route, Routes, BrowserRouter, useLocation } from 'react-router-dom'
 import './App.css'
 import Header from './components/Header'
@@ -20,11 +20,13 @@ function App() {
             path="/"
             element={
               <div>
+                <Suspense>
                 <Header />
                 <Events />
                 <Gallery /> 
                 <Overview /> 
                 <Footer />
+                </Suspense>
               </div>
             }
           />
