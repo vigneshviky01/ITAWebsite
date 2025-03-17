@@ -211,7 +211,7 @@ const Header = () => {
 
 
 
-                <motion.div
+                {/* <motion.div
                     className="w-full px-4 sm:px-8 md:px-10 md:mt-30 sm:mt-12 flex flex-col items-center sm:items-start z-10"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 2, y: 0 }}
@@ -223,7 +223,7 @@ const Header = () => {
                         Join us at Technovate and be a part of an exciting journey of innovation and technology!
                         </p>
                     </div>
-                </motion.div>
+                </motion.div> */}
             </section>
         </div>
     );

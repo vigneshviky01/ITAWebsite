@@ -10,7 +10,7 @@ const Overview = () => {
             <motion.h1
                 className="text-[150px] md:pl-10 max-sm:text-6xl flex justify-start max-sm:p-2"
                 initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeInOut" }}
             >
                 Overview
@@ -28,7 +28,7 @@ const Overview = () => {
             <motion.div
                 className="mt-8 flex justify-center mb-16 mx-7"
                 initial={{ scale: 0.8, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
+                animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
             >
                 <Suspense
